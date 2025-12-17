@@ -1,14 +1,16 @@
-#include <iostream.h>
+#include<iostream>
+using namespace std; 
 
-void main() {
-    int year;
-    cout << "Enter a year: ";
-    cin >> year;
+void salary_change(int s)
+{
+    s = 30000;
+    cout<<"value inside function:"<<s <<endl;
+}
 
-    if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
-        cout << year << " is a Leap Year." << endl;
-    } 
-    else {
-        cout << year << " is NOT a Leap Year." << endl;
-    }
+int main()
+{
+    int sal=27000;
+    salary_change(sal);
+    cout<<"value inside main "<< sal <<endl;
+    return 0;
 }
